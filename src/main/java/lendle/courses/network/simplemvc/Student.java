@@ -13,6 +13,10 @@ import java.util.Map;
  * @author lendle
  */
 public class Student {
+
+    static Student getStudent(String id) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     private String id, name;
     private double score=-1;
 

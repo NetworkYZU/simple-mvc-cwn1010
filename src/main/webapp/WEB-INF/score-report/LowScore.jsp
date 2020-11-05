@@ -4,6 +4,7 @@
     Author     : lendle
 --%>
 
+<%@page import="lendle.courses.network.simplemvc.Student"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -15,7 +16,7 @@
         <h1>加油加油</h1>
         <%
             Student student=(Student)request.getAttribute("student");
-            out.println(student.getname());
+            out.println(student.getName());
         %>
 
         

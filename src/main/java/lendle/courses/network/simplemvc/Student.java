@@ -15,7 +15,8 @@ import java.util.Map;
 public class Student {
 
     static Student getStudent(String id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return db.get(id);
     }
     private String id, name;
     private double score=-1;
@@ -50,11 +51,12 @@ public class Student {
         this.score = score;
     }
     
-    private static Map<String, Student> db=new HashMap<>();
+    private static final Map<String, Student> db=new HashMap<>();
     
     static{
         db.put("id1", new Student("id1", "name1", 60));
         db.put("id2", new Student("id2", "name2", 50));
         db.put("id3", new Student("id3", "name3", 80));
+        //db.put("id4", new Student(id, name, 0));
     }
 }
